@@ -4,21 +4,24 @@ using UnityEngine;
 
 
 // Simple camera follow script
+// TODO replace with Cinemachine
 [RequireComponent(typeof(Camera))]
 public class CameraFollow : MonoBehaviour
 {
-
+    // Set in editor
     [SerializeField] private Transform player; // Drag player here
+    [SerializeField] private Vector3 cameraOffset;
+    [SerializeField] private float cameraTilt;
 
-    private Vector3 cameraOffset;
+    // Cache
     private Camera thisCamera;
-    private Quaternion cameraRotateStart;
+    private Quaternion cameraRotate;
 
     void Start()
     {
         thisCamera = GetComponent<Camera>();
-        cameraOffset = thisCamera.transform.position - player.transform.position;
-        cameraRotateStart = thisCamera.transform.rotation;
+
+        cameraRotate = Quaternion.AngleAxis(cameraTilt, Vector3.right);
     }
 
     // Always do camera follow code last, after player has moved.
@@ -29,6 +32,6 @@ public class CameraFollow : MonoBehaviour
                                         player.transform.position.y + cameraOffset.y, 
                                         player.transform.position.z);
                                                                     
-        thisCamera.transform.rotation = player.transform.rotation *  cameraRotateStart;
+        thisCamera.transform.rotation = player.transform.rotation * cameraRotate;
     }
 }
