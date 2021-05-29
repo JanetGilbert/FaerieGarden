@@ -7,3 +7,5 @@ https://opengameart.org/node/10595
 https://opengameart.org/node/10599
 https://opengameart.org/node/9894
 https://opengameart.org/content/cloudy-skyboxes
+https://www.the3rdsequence.com/texturedb/texture/3/smooth+sand/
+https://assetstore.unity.com/packages/2d/textures-materials/sky/fantasy-skybox-free-18353#content
