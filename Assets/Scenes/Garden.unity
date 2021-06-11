@@ -2040,10 +2040,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tree
       objectReference: {fileID: 0}
-    - target: {fileID: 3916723205285725558, guid: 97e3d04d7be52214facd940ec320f138, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 5005279747626974157, guid: 97e3d04d7be52214facd940ec320f138, type: 3}
       propertyPath: m_RootOrder
       value: 0

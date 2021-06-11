@@ -1732,10 +1732,10 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Optimized Leaf Material
-  m_Shader: {fileID: 4800000, guid: 80a0fe31fbeae6e478c8f5f852ac31a4, type: 3}
+  m_Shader: {fileID: 4800000, guid: b7faa05ce39ddd34fb69076a6a23fc4a, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
+  m_EnableInstancingVariants: 1
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
   stringTagMap: {}
@@ -1780,10 +1780,10 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Optimized Bark Material
-  m_Shader: {fileID: 4800000, guid: 7afffebb8ebab8c47a77d226d88fbe4f, type: 3}
+  m_Shader: {fileID: 4800000, guid: ed9598975413fa644967ffc2caa19f2e, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
+  m_EnableInstancingVariants: 1
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
   stringTagMap: {}
@@ -1806,6 +1806,7 @@ Material:
     m_Ints: []
     m_Floats:
     - _Cutoff: 0.3
+    - _Shininess: 0.078125
     - _SquashAmount: 1
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
